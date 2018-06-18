@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo2.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 50vh; 
+    color: #fff;
+  }
+  
+  .sel-perfil h2 {
+
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+  }
+
+  .sel-perfil .empleado {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: calc(20%);
+    -webkit-transition:all .5s ease; /* Safari y Chrome */
+    -moz-transition:all .5s ease; /* Firefox */
+    }
+
+    .sel-perfil :hover .empleado {
+        -webkit-transform:scale(1.10);
+        -moz-transform:scale(1.10);
+        -ms-transform:scale(1.10);
+        -o-transform:scale(1.10);
+        transform:scale(1.10);
+        }
+        .sel-perfil {/*Ancho y altura son modificables al requerimiento de cada uno*/
+        width:300px;
+        height:180px;
+        overflow:hidden;
+        }
+
+
+  .sel-perfil .admin {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: calc(60% - 60px);
+    -webkit-transition:all .9s ease; /* Safari y Chrome */
+    -moz-transition:all .9s ease; /* Firefox */
+  }
+    .sel-perfil :hover .admin {
+        -webkit-transform:scale(1.10);
+        -moz-transform:scale(1.10);
+        -ms-transform:scale(1.10);
+        -o-transform:scale(1.10);
+        transform:scale(1.10);
+        }
+        .sel-perfil {/*Ancho y altura son modificables al requerimiento de cada uno*/
+        width:300px;
+        height:180px;
+        overflow:hidden;
+        }
+
+
+        .sel-perfil .textE {
+            position: absolute;
+            top: 470px;
+            left: calc(17%);
+            }
+
+        .sel-perfil .TextA {
+            position: absolute;
+            top: 470px;
+             left: calc(52.5%);
+             }

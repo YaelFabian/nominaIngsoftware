@@ -1,0 +1,211 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 18px;
+
+}
+/*Barra de navegación-Inicio*/
+body{
+  background: #a1defa;
+}
+.menu_bar{
+  display:none;
+}
+header{
+  width: 100%;
+}
+header nav{
+  background:#3498DB;
+  z-index:1000;
+  max-width: 1200px;
+  width: 95%;
+  margin:20px auto;
+}
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  position: relative;
+}
+header nav ul li:hover{
+  background: rgb(37, 162, 245);
+}
+header nav ul li a {
+  color: snow;
+  display:block;
+  text-decoration: none;
+  padding: 15px;
+}
+header nav ul li a span{
+  margin-right: 3px;
+}
+header nav ul li:hover .children{
+  display: block;
+}
+header nav ul li .children{
+  display:none;
+  background: #011826;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+header nav ul li .children li{
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,.8);
+}
+
+header nav ul li .children li a{
+  display: block;
+}
+
+header nav ul li .children li a span{
+  float: right;
+  position: relative;
+  top:3px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+header nav ul li .caret{
+  position: relative;
+  top:3px;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+@media screen and (max-width: 800px){
+  body{
+      padding-top: 80px;
+  }
+  .menu_bar{
+      display:block;
+      width: 100%;
+      position: fixed;
+      top:0;
+      background: darkturquoise;
+  }
+  .menu_bar .bt-menu{
+      display: block;
+      padding: 20px;
+      color:#fff;
+      overflow: hidden;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+  }
+  .menu_bar span{
+      float: right;
+      font-size: 40px;
+  }
+  header nav{
+      width: 80%;
+      height: calc(100%-80px);
+      position: fixed;
+      right: 100%;
+      margin: 0;
+      overflow: scroll;
+  }
+  header nav ul li{
+      display: block;
+      border-bottom:1px solid rgba(255,255,255,.6);
+  }
+  header nav ul li a{
+      display: block;
+  }
+
+  header nav ul li:hover .children{
+      display:none;
+  }
+  header nav ul li .children{
+      width: 100%;
+      position: relative;
+  }
+  header nav ul li .children li a{
+      margin-left: 20px;
+
+  }
+  header nav ul li .caret{
+      float: right;
+  }
+}
+/*Barra de Navegación-fin*/ 
+
+/*Encabezado*/
+header img{
+  width: 150px;
+  height: 100px;
+  margin-left: 450px;
+  float: left;
+}
+header h1 p{
+  font-size: 35px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+/*Encabezado Fin*/
+
+
+  article{
+    background-color:  rgb(218, 235, 247);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  article img{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    left: calc(40% - 100px);
+  }
+
+article  h3{
+    font-family: sans-serif;
+    margin-left: 25%;
+
+  }
+  .conceptos input {
+    margin-right: 47px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+.conceptos input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1da7e7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  .conceptos input[type="submit"]:hover {
+    cursor: pointer;
+    background: #86c6f1;
+    color: #000;
+  }
+
+  .avatarr {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: 700px;
+    margin-right: 400px;
+  }
+
+  .retard {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    right: calc(200px);
+  }
+  
